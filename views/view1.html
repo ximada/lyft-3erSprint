@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>View 1</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'/>
+	<link rel="stylesheet" href="../css/main.css">
+	
+	
+</head>
+<body>
+
+	<section class="row" >
+		<div class="sing-up col-sm-12">
+			<a id="back-1" href="../index.html"><i class="fa fa-angle-left fa-3x" aria-hidden="true"></i></a>
+			<span class="up">Sing Up</span>
+			<br>
+			<span class="join">Join now for free ride credit</span>
+		</div>
+
+		
+		<div class="select-number col-sm-12">
+			<select  id="pais">
+             <option value="">SELECCIONE UN PAIS</option>
+             <option value="+54">ARGENTINA</option>
+             <option value="+56">CHILE</option>
+             <option value="+58">COLOMBIA</option>
+             <option value="+53">PERU</option>
+             <option value="+52">MEXICO</option>
+             </select>
+             <input type="number" id="telf"  placeholder=" Your Phone" autocomplete="off"  class="validate" pattern="[0-9]{10}" required />
+		</div>
+		<div class="h6 col-sm-6">We´ll send a text to verify your phone</div>
+		<button class="col-sm-1" id="send-Number" type="submit" data-toggle="modal" data-target="#codeModal" disabled><strong>Next</strong></button>	
+	</section>
+
+
+
+	<section id="verify-phone" class="d-none">
+		<div class="sing-up col-sm-12">
+			<a href=""><i class="fa fa-angle-left fa-3x" aria-hidden="true"></i></a>
+			<span class="up2">Verify phone number</span>
+			<br>
+			<span class="join pl-2">Join now for free ride credit</span>
+		</div>
+		<div class="col-auto">
+			<label class="sr-only" for="inlineFormInputGroup">Username</label>
+			<div class="input-group mb-2">
+			  <div class="input-group-prepend">
+				<div class="input-group-text">LAB</div>
+			  </div>
+			  <input type="text" class="form-control" id="inlineFormInputGroup" placeholder=" _ _ _">
+			</div>
+			<span>Enter Your code sent to +52</span>
+			<br>
+			<button type="button"  id="randon-Send"><strong>Resend code</strong></button>
+		  </div>
+		
+			<button class="col-sm-3" id="btn-veryfiR" type="submit"  disabled><strong>Next</strong></button>
+     
+	</section>
+	 <!-- Modal codigo Ramdon -->
+	 <div class="modal" tabindex="-1" role="dialog" id="codeModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Your Code Is</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p class="code-Cach"></p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class=" buton-rose"  id="btnGoMOdal"> <strong>Go..</strong> </button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<section id="sing-upVerify" class="d-none">
+		<div class="sing-up col-sm-12">
+			<a href="" id="back-3"><i class="fa fa-angle-left fa-3x" aria-hidden="true"></i></a>
+			<span class="up3">Sing up</span>
+			<br>
+			<span class="join">Join now for free ride credit</span>
+		</div>
+		<div class="input-group col-sm-6">
+			<div class="input-group-prepend">
+			  <span class="input-group-text" id=""><i class="fa fa-user " aria-hidden="true"></i></span>
+			</div>
+			<input type="text" placeholder="First name" class="form-control">
+			<input type="text" placeholder="Last name" class="form-control">
+		  </div>
+		  <div class="col-auto">
+			<label class="sr-only" for="inlineFormInputGroup">Username</label>
+			<div class="input-group mb-2">
+			  <div class="input-group-prepend">
+				<div class="input-group-text"><i class="fa fa-envelope-o"></i></div>
+			  </div>
+			  <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Email">
+			</div>
+		  </div>
+		  <div class="form-check col-sm-3">
+			<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+			<label class="form-check-label" for="defaultCheck1">
+			  I agree to Lyft´ss Terms of Service
+			</label>
+		  </div>
+		
+			<button class="col-sm-3" id="btn-singUp" type="submit"  disabled><strong>Next</strong></button>
+	</section>
+
+	<section>
+
+	</section>
+
+
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+			<!-- funcionalidad archivos JS -->
+    <script src="../js/app.js"></script>
+</body>
+</html>
