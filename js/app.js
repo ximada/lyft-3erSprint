@@ -17,7 +17,8 @@ function loadPage(){
     $("#inlineFormInputGroup").keyup(checkCodeRandom);
     $("#randon-Send").click(resendCode);
     $("#back-3").click(verificationCodeView);
-    
+    $("#defaultCheck1").click(dataValidation);
+    $("#btn-singUp").click(finalCheckBox);
     
 
 }
@@ -82,4 +83,17 @@ function verificationCodeView() { //Funcion que muestra la vista de verificació
        var $signUpVerify =$("#sing-upVerify");
        $signUpVerify.removeClass("d-none");
        $signUpVerify.siblings().addClass("d-none");
+   }
+
+   function dataValidation() {
+       if($("#first-name").val().length > 0 && $("#last-name").val().length > 0 && $("#inlineFormInputGroup") !== null && $("#defaultCheck1").is (':checked') ) {
+           $("#btn-singUp").removeAttr("disabled");
+       } else {
+        $("#btn-singUp").attr("disabled",true);
+       }
+   }
+   function finalCheckBox() {
+       var $finalVerification = $("#final-view");
+       $finalVerification.removeClass("d-none");
+       $finalVerification.siblings().addClass("d-none");
    }

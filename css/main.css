@@ -104,3 +104,18 @@
 	height: 50vh;
 }
 
+/* ultima vista */
+
+#final-view {
+	background-image: linear-gradient(to right, #6A0166, #ee098b); 
+    background-blend-mode: hard-light;
+	
+	height: 100vh;
+	width: 100%;
+}
+
+.final-img {
+	top: 40%;
+	left: 25%;
+}
+
